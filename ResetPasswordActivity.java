@@ -27,7 +27,7 @@ public class ResetPasswordActivity extends Activity implements Post.Communicator
     boolean wasReset = false;
 
 	@Override
-	protected void onCreate(Bundle savedInstanceState) {
+        protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_reset_password);
 
