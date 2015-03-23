@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/choose_username_layout"
+    android:background="#00000000">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:layout_marginTop="40dp"
+        android:id="@+id/choose_username_box">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="60dp"
+            android:background="#717A46"
+            android:gravity="center"
+            android:id="@+id/choose_username_title_holder">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ENTER USERNAME"
+                android:id="@+id/choose_username_title_text"
+                android:textSize="30sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:id="@+id/choose_username_edittext_holder"
+            android:background="#222726"
+            android:gravity="center">
+
+            <EditText
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/choose_username_edittext"
+                android:background="#00000000"
+                android:hint="ENTER USERNAME"
+                android:layout_marginTop="40dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:textColorHint="#ffffff"
+                android:textColor="#ffffff" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="USERNAME IS AVAILABLE!"
+                android:id="@+id/choose_username_available_textview"
+                android:layout_marginTop="40dp"
+                android:textColor="#646D40" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/choose_username_divider"
+                android:src="@drawable/shape1"
+                android:layout_marginTop="60dp" />
+
+            <Button
+                android:layout_width="fill_parent"
+                android:layout_height="40dp"
+                android:text="OK"
+                android:id="@+id/choose_username_submit_button"
+                android:background="#00000000"
+                android:textColor="#ffffff" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

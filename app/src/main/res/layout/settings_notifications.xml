@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#3A3E3D"
+    android:id="@+id/settings_notifications_layout">
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:background="#3F4946"
+        android:id="@+id/settings_notifications_toplayout">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Notifications"
+            android:id="@+id/settings_notification_top_text"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:textSize="20sp" />
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:id="@+id/settings_notifications_button_holder"
+            android:gravity="center">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/settings_notifications_backarrow"
+                android:src="@drawable/backarrow"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Settings"
+                android:id="@+id/settings_notifications_backtext"
+                android:textSize="20sp" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:gravity="center_vertical"
+        android:id="@+id/settings_notifications_all_holder"
+        android:background="#222726">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="All Notifications"
+            android:id="@+id/settings_notifications_all_textview"
+            android:textSize="20sp"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="0.9" />
+
+        <Switch
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/settings_notifications_all_switch"
+            android:layout_marginRight="10dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:gravity="center_vertical"
+        android:id="@+id/settings_notifications_comments_holder"
+        android:background="#222726">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Notify for Comments"
+            android:id="@+id/settings_notifications_comments_textview"
+            android:textSize="20sp"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="0.9" />
+
+        <Switch
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/settings_notifications_comments_switch"
+            android:layout_marginRight="10dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:gravity="center_vertical"
+        android:id="@+id/settings_notifications_frontpage_holder"
+        android:background="#222726">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Notify When on Front Page"
+            android:id="@+id/settings_notifications_frontpage_text"
+            android:textSize="20sp"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="0.9" />
+
+        <Switch
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/settings_notifications_frontpage_switch"
+            android:layout_marginRight="10dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:id="@+id/settings_notifications_mention_holder"
+        android:background="#222726"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Notify for Mention"
+            android:id="@+id/settings_notifications_mention_textview"
+            android:textSize="20sp"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="0.9" />
+
+        <Switch
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/settings_notifications_mention_switch"
+            android:layout_marginRight="10dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:gravity="center_vertical"
+        android:id="@+id/settings_notifications_trending_holder"
+        android:background="#222726">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Notify for Trending"
+            android:id="@+id/settings_notifications_trending_textview"
+            android:textSize="20sp"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="0.9" />
+
+        <Switch
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/settings_notifications_trending_switch"
+            android:layout_marginRight="10dp" />
+    </LinearLayout>
+</LinearLayout>

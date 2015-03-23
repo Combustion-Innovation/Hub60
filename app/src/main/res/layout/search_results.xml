@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:divider="#ffffff"
+    android:id="@+id/results_main_layout">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#222726"
+        android:id="@+id/results_top_result_holder">
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="160dp"
+            android:id="@+id/results_top_image"
+            android:src="@drawable/poster"
+            android:layout_marginLeft="5dp" />
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@+id/results_top_image"
+            android:layout_toEndOf="@+id/results_top_image"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="5dp"
+            android:id="@+id/results_top_text_holder">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="The Dark Knight"
+                android:id="@+id/results_top_title"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:textSize="24sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="(July 18)"
+                android:id="@+id/results_top_date"
+                android:layout_below="@+id/textView2"
+                android:layout_centerHorizontal="true"
+                android:textSize="20sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Cum sociis natoque penatibus dis parturient montes, nascetur"
+                android:id="@+id/results_top_description"
+                android:layout_below="@+id/textView3"
+                android:layout_centerHorizontal="true"
+                android:textSize="16sp"
+                android:layout_marginRight="30dp"
+                android:textColor="#717A46" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="H60"
+            android:id="@+id/results_top_source"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="5dp" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#222726"
+        android:id="@+id/results_next_holder">
+
+        <ImageView
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/results_next_image"
+            android:src="@drawable/userclippingspace"
+            android:layout_marginLeft="5dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Mother Squirrel Holds Baby"
+            android:id="@+id/results_next_title"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@+id/results_next_image"
+            android:layout_toEndOf="@+id/results_next_image"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:textIsSelectable="false"
+            android:textSize="20sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="242 Replies"
+            android:id="@+id/results_next_replies"
+            android:textColor="#717A46"
+            android:layout_below="@+id/results_next_title"
+            android:layout_toRightOf="@+id/results_next_image"
+            android:layout_toEndOf="@+id/results_next_image"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="5dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="321 upvotes"
+            android:id="@+id/results_next_upvotes"
+            android:textColor="#467B5E"
+            android:layout_alignTop="@+id/results_next_replies"
+            android:layout_toRightOf="@+id/results_next_replies"
+            android:layout_toEndOf="@+id/results_next_replies"
+            android:layout_marginLeft="10dp" />
+    </RelativeLayout>
+</LinearLayout>
